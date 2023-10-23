@@ -1,0 +1,23 @@
+﻿services:
+  sqlserver:
+    environment:
+      SA_PASSWORD: $SQLSERVER_PASSWORD
+      ACCEPT_EULA: "Y"
+    ports:
+      - 1433:1433
+    volumes:
+      - sqlserverdata:/var/opt/mssql/data
+  redis:
+    ports:
+      - 6379:6379
+  citeointerview.api:
+    environment:      
+      - API_NAME=identity      
+      - ConnectionStrings__ShopDb=Server=sqlserver;Database=shop;TrustServerCertificate=True;User Id=sa;Password=$SQLSERVER_PASSWORD      
+      - ConnectionStrings__Redis=redis:6379  
+    ports:
+      - 5106:80
+      
+volumes:
+  sqlserverdata:
+    external: false

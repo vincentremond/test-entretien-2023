@@ -1,0 +1,14 @@
+﻿services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    user: root
+  redis:
+    image: redis:alpine
+    hostname: redis
+  citeointerview.api:
+    image: citeointerview.api
+    build: ./src/CiteoInterview.Api
+      
+
+  
+     

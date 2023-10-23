@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CiteoInterview.Algo", "src\CiteoInterview.Algo\CiteoInterview.Algo.csproj", "{35CFBABD-964A-461B-9114-21459E0DF472}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D7041710-ACF6-4B95-8099-D791377B2DBE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{DE17EC1D-D65C-4302-B58B-18E4CFE78AA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CiteoInterview.Algo.UniTests", "tests\CiteoInterview.Algo.UniTests\CiteoInterview.Algo.UniTests.csproj", "{B8FB36AB-87B8-41FB-A83D-FB8AA80858AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CiteoInterview.Linq", "src\CiteoInterview.Linq\CiteoInterview.Linq.csproj", "{38EEC270-3821-4022-A12A-B6CA33721497}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CiteoInterview.Linq.UnitTests", "tests\CiteoInterview.Linq.UnitTests\CiteoInterview.Linq.UnitTests.csproj", "{4ACB2A0D-EE76-41D7-84A7-0A49F64008E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CiteoInterview.Api", "src\CiteoInterview.Api\CiteoInterview.Api.csproj", "{305DAE90-12D1-4345-A597-E44A1F35CCF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{92A5E02F-0608-4ED3-8011-6FD9AE76E402}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		docker-compose.override.yml = docker-compose.override.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35CFBABD-964A-461B-9114-21459E0DF472}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35CFBABD-964A-461B-9114-21459E0DF472}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35CFBABD-964A-461B-9114-21459E0DF472}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35CFBABD-964A-461B-9114-21459E0DF472}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8FB36AB-87B8-41FB-A83D-FB8AA80858AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8FB36AB-87B8-41FB-A83D-FB8AA80858AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8FB36AB-87B8-41FB-A83D-FB8AA80858AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8FB36AB-87B8-41FB-A83D-FB8AA80858AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38EEC270-3821-4022-A12A-B6CA33721497}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38EEC270-3821-4022-A12A-B6CA33721497}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38EEC270-3821-4022-A12A-B6CA33721497}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38EEC270-3821-4022-A12A-B6CA33721497}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ACB2A0D-EE76-41D7-84A7-0A49F64008E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ACB2A0D-EE76-41D7-84A7-0A49F64008E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ACB2A0D-EE76-41D7-84A7-0A49F64008E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ACB2A0D-EE76-41D7-84A7-0A49F64008E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{305DAE90-12D1-4345-A597-E44A1F35CCF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{305DAE90-12D1-4345-A597-E44A1F35CCF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{305DAE90-12D1-4345-A597-E44A1F35CCF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{305DAE90-12D1-4345-A597-E44A1F35CCF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{35CFBABD-964A-461B-9114-21459E0DF472} = {D7041710-ACF6-4B95-8099-D791377B2DBE}
+		{B8FB36AB-87B8-41FB-A83D-FB8AA80858AC} = {DE17EC1D-D65C-4302-B58B-18E4CFE78AA1}
+		{38EEC270-3821-4022-A12A-B6CA33721497} = {D7041710-ACF6-4B95-8099-D791377B2DBE}
+		{4ACB2A0D-EE76-41D7-84A7-0A49F64008E7} = {DE17EC1D-D65C-4302-B58B-18E4CFE78AA1}
+		{305DAE90-12D1-4345-A597-E44A1F35CCF2} = {D7041710-ACF6-4B95-8099-D791377B2DBE}
+	EndGlobalSection
+EndGlobal
