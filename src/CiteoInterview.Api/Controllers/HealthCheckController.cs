@@ -6,14 +6,6 @@ namespace CiteoInterview.Api.Controllers;
 [Route("[controller]")]
 public class HealthCheckController : ControllerBase
 {
-
-    private readonly ILogger<ProductsController> _logger;
-
-    public HealthCheckController(ILogger<ProductsController> logger)
-    {
-        _logger = logger;
-    }
-
     [HttpGet(Name = "GetHealth")]
     public IActionResult Get()
     {

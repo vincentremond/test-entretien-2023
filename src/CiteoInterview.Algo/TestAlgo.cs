@@ -1,5 +1,3 @@
-using System.Security.AccessControl;
-
 namespace CiteoInterview.Algo;
 
 public class TestAlgo
@@ -22,7 +20,13 @@ public class TestAlgo
         return InnerTest3(stack, numbers, 0, 0, sum).ToArray();
     }
 
-    private IEnumerable<IEnumerable<int>> InnerTest3(Stack<int> stack, int[] values, int index, int currentSum, int targetSum)
+    private IEnumerable<IEnumerable<int>> InnerTest3(
+        Stack<int> stack,
+        int[] values,
+        int index,
+        int currentSum,
+        int targetSum
+    )
     {
         for (var i = index; i < values.Length; i++)
         {
@@ -40,11 +44,11 @@ public class TestAlgo
                 yield return stack.ToArray();
                 stack.Pop();
             }
-            
+
             if (projectedValue < targetSum)
             {
                 stack.Push(value);
-                
+
                 var innerTest3 = InnerTest3(
                     stack,
                     values,
@@ -53,7 +57,7 @@ public class TestAlgo
                     targetSum
                 ).ToList();
                 stack.Pop();
-                
+
                 foreach (var x in innerTest3)
                 {
                     yield return x;
@@ -67,7 +71,13 @@ public class SolverTest1
 {
     public static IEnumerable<IEnumerable<string>> Solve(string[] input)
     {
-        return input.Select(x => new { Str = x, Hash = Hash(x), }).GroupBy(x => x.Hash, new IntArrayComparer()).Select(x => x.Select(x => x.Str).Order().ToList());
+        return input.Select(
+            x => new
+            {
+                Str = x,
+                Hash = Hash(x),
+            }
+        ).GroupBy(x => x.Hash, new IntArrayComparer()).Select(x => x.Select(x => x.Str).Order().ToList());
     }
 
     private static int[] Hash(string str)
@@ -84,7 +94,20 @@ public class SolverTest1
 
 public class IntArrayComparer : IEqualityComparer<int[]>
 {
-    public bool Equals(int[]? x, int[]? y) => x.Zip(y).All(a => a.First == a.Second);
+    public bool Equals(int[]? x, int[]? y)
+    {
+        if (x == null && y == null)
+        {
+            return true;
+        }
+
+        if (x == null || y == null)
+        {
+            return false;
+        }
+
+        return x.Zip(y).All(a => a.First == a.Second);
+    }
 
     public int GetHashCode(int[] values) => values.Aggregate(0, HashCode.Combine);
 }
