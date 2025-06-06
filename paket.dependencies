@@ -1,0 +1,13 @@
+source https://api.nuget.org/v3/index.json
+
+storage: none
+nuget coverlet.collector
+nuget Microsoft.AspNetCore.OpenApi
+nuget Microsoft.EntityFrameworkCore
+nuget Microsoft.EntityFrameworkCore.Design
+nuget Microsoft.EntityFrameworkCore.SqlServer
+nuget Microsoft.EntityFrameworkCore.Tools
+nuget Microsoft.NET.Test.Sdk
+nuget Swashbuckle.AspNetCore
+nuget xunit
+nuget xunit.runner.visualstudio

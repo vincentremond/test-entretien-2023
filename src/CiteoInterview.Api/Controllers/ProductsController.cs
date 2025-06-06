@@ -7,7 +7,7 @@ namespace CiteoInterview.Api.Controllers;
 [ApiController]
 public class ProductsController : ControllerBase
 {
-    private ShopDbContext _shopDbContext;
+    private readonly ShopDbContext _shopDbContext;
 
     public ProductsController(ShopDbContext shopDbContext)
     {
