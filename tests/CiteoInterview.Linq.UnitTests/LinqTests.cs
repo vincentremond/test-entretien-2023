@@ -10,11 +10,11 @@ public class LinqTests
         {
             "aabccccc",
             "ddflfccccc",
-            "zzzzzzzzzzzzzzzzzzzzzzzzzz"
+            "zzzzzzzzzzzzzzzzzzzzzzzzzz",
         };
         Assert.Equal('z', test.Test1(input));
     }
-    
+
     [Fact]
     public void Test2()
     {
