@@ -8,36 +8,39 @@ NUGET
     Microsoft.Bcl.Cryptography (10.0.9) - restriction: >= net10.0
     Microsoft.Build.Framework (18.7.1) - restriction: >= net10.0
       Microsoft.NET.StringTools (>= 18.7.1) - restriction: >= netstandard2.0
-    Microsoft.CodeAnalysis.Analyzers (5.3) - restriction: >= net10.0
-    Microsoft.CodeAnalysis.Common (5.3) - restriction: >= net10.0
-      Microsoft.CodeAnalysis.Analyzers (>= 5.3.0-2.25625.1) - restriction: >= netstandard2.0
-    Microsoft.CodeAnalysis.CSharp (5.3) - restriction: >= net10.0
-      Microsoft.CodeAnalysis.Analyzers (>= 5.3.0-2.25625.1) - restriction: >= netstandard2.0
-      Microsoft.CodeAnalysis.Common (5.3) - restriction: >= netstandard2.0
-    Microsoft.CodeAnalysis.CSharp.Workspaces (5.3) - restriction: >= net10.0
+    Microsoft.CodeAnalysis.Analyzers (5.6) - restriction: >= net10.0
+    Microsoft.CodeAnalysis.Common (5.6) - restriction: >= net10.0
+      Microsoft.CodeAnalysis.Analyzers (>= 5.3) - restriction: >= netstandard2.0
+    Microsoft.CodeAnalysis.CSharp (5.6) - restriction: >= net10.0
+      Microsoft.CodeAnalysis.Analyzers (>= 5.3) - restriction: >= netstandard2.0
+      Microsoft.CodeAnalysis.Common (5.6) - restriction: >= netstandard2.0
+    Microsoft.CodeAnalysis.CSharp.Workspaces (5.6) - restriction: >= net10.0
       Humanizer.Core (>= 2.14.1) - restriction: >= netstandard2.0
-      Microsoft.CodeAnalysis.Analyzers (>= 5.3.0-2.25625.1) - restriction: >= netstandard2.0
-      Microsoft.CodeAnalysis.Common (5.3) - restriction: >= netstandard2.0
-      Microsoft.CodeAnalysis.CSharp (5.3) - restriction: >= netstandard2.0
-      Microsoft.CodeAnalysis.Workspaces.Common (5.3) - restriction: >= netstandard2.0
-      System.Composition (>= 9.0) - restriction: >= netstandard2.0
-    Microsoft.CodeAnalysis.Workspaces.Common (5.3) - restriction: >= net10.0
+      Microsoft.CodeAnalysis.Analyzers (>= 5.3) - restriction: >= netstandard2.0
+      Microsoft.CodeAnalysis.Common (5.6) - restriction: >= netstandard2.0
+      Microsoft.CodeAnalysis.CSharp (5.6) - restriction: >= netstandard2.0
+      Microsoft.CodeAnalysis.Workspaces.Common (5.6) - restriction: >= netstandard2.0
+      System.Composition (>= 10.0.1) - restriction: >= netstandard2.0
+    Microsoft.CodeAnalysis.Workspaces.Common (5.6) - restriction: >= net10.0
       Humanizer.Core (>= 2.14.1) - restriction: >= netstandard2.0
-      Microsoft.CodeAnalysis.Analyzers (>= 5.3.0-2.25625.1) - restriction: >= netstandard2.0
-      Microsoft.CodeAnalysis.Common (5.3) - restriction: >= netstandard2.0
-      System.Composition (>= 9.0) - restriction: >= netstandard2.0
-    Microsoft.CodeAnalysis.Workspaces.MSBuild (5.3) - restriction: >= net10.0
+      Microsoft.CodeAnalysis.Analyzers (>= 5.3) - restriction: >= netstandard2.0
+      Microsoft.CodeAnalysis.Common (5.6) - restriction: >= netstandard2.0
+      System.Composition (>= 10.0.1) - restriction: >= netstandard2.0
+    Microsoft.CodeAnalysis.Workspaces.MSBuild (5.6) - restriction: >= net10.0
       Humanizer.Core (>= 2.14.1) - restriction: || (>= net472) (>= net8.0)
       Microsoft.Build.Framework (>= 17.11.48) - restriction: >= net8.0
-      Microsoft.CodeAnalysis.Analyzers (>= 5.3.0-2.25625.1) - restriction: || (>= net472) (>= net8.0)
-      Microsoft.CodeAnalysis.Workspaces.Common (5.3) - restriction: || (>= net472) (>= net8.0)
-      Microsoft.Extensions.DependencyInjection (>= 9.0) - restriction: || (>= net472) (>= net8.0)
-      Microsoft.Extensions.Logging (>= 9.0) - restriction: || (>= net472) (>= net8.0)
-      Microsoft.Extensions.Logging.Abstractions (>= 9.0) - restriction: || (>= net472) (>= net8.0)
-      Microsoft.Extensions.Options (>= 9.0) - restriction: || (>= net472) (>= net8.0)
-      Microsoft.Extensions.Primitives (>= 9.0) - restriction: || (>= net472) (>= net8.0)
+      Microsoft.CodeAnalysis.Analyzers (>= 5.3) - restriction: || (>= net472) (>= net8.0)
+      Microsoft.CodeAnalysis.Workspaces.Common (5.6) - restriction: || (>= net472) (>= net8.0)
+      Microsoft.CodeAnalysis.Workspaces.MSBuild.Contracts (5.6) - restriction: || (>= net472) (>= net8.0)
+      Microsoft.Extensions.DependencyInjection (>= 10.0.1) - restriction: || (>= net472) (>= net8.0)
+      Microsoft.Extensions.Logging (>= 10.0.1) - restriction: || (>= net472) (>= net8.0)
+      Microsoft.Extensions.Logging.Abstractions (>= 10.0.1) - restriction: || (>= net472) (>= net8.0)
+      Microsoft.Extensions.Options (>= 10.0.1) - restriction: || (>= net472) (>= net8.0)
+      Microsoft.Extensions.Primitives (>= 10.0.1) - restriction: || (>= net472) (>= net8.0)
       Microsoft.VisualStudio.SolutionPersistence (>= 1.0.52) - restriction: || (>= net472) (>= net8.0)
-      System.Composition (>= 9.0) - restriction: || (>= net472) (>= net8.0)
+      System.Composition (>= 10.0.1) - restriction: || (>= net472) (>= net8.0)
+    Microsoft.CodeAnalysis.Workspaces.MSBuild.Contracts (5.6) - restriction: >= net10.0
+      System.Collections.Immutable (>= 10.0.1) - restriction: || (>= net472) (>= net8.0)
     Microsoft.CodeCoverage (18.7) - restriction: || (>= net462) (>= net8.0)
     Microsoft.Data.SqlClient (7.0.2) - restriction: >= net10.0
       Microsoft.Bcl.Cryptography (>= 9.0.13) - restriction: >= net9.0
@@ -269,7 +272,7 @@ NUGET
       System.Runtime.Extensions (>= 4.3) - restriction: && (< monoandroid) (< monotouch) (< net45) (>= netstandard1.3) (< win8) (< wpa81) (< xamarinios) (< xamarinmac) (< xamarintvos) (< xamarinwatchos)
       System.Threading (>= 4.3) - restriction: && (< monoandroid) (< monotouch) (< net45) (>= netstandard1.3) (< win8) (< wpa81) (< xamarinios) (< xamarinmac) (< xamarintvos) (< xamarinwatchos)
       System.Threading.Tasks (>= 4.3) - restriction: || (&& (< monoandroid) (< monotouch) (< net45) (>= netstandard1.3) (< win8) (< wpa81) (< xamarinios) (< xamarinmac) (< xamarintvos) (< xamarinwatchos)) (&& (< monoandroid) (< net45) (>= netstandard1.1) (< netstandard1.3) (< win8) (< wpa81))
-    System.Collections.Immutable (10.0.9) - restriction: >= net472
+    System.Collections.Immutable (10.0.9) - restriction: || (>= net10.0) (>= net472)
       System.Memory (>= 4.6.3) - restriction: || (>= net462) (&& (< net8.0) (>= netstandard2.0))
       System.Runtime.CompilerServices.Unsafe (>= 6.1.2) - restriction: || (>= net462) (&& (< net8.0) (>= netstandard2.0))
     System.Composition (10.0.9) - restriction: >= net10.0

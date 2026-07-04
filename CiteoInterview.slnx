@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="docker-compose.override.yml" />
+    <File Path="docker-compose.yml" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/CiteoInterview.Algo/CiteoInterview.Algo.csproj" />
+    <Project Path="src/CiteoInterview.Api/CiteoInterview.Api.csproj" />
+    <Project Path="src/CiteoInterview.Linq/CiteoInterview.Linq.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/CiteoInterview.Algo.UniTests/CiteoInterview.Algo.UniTests.csproj" />
+    <Project Path="tests/CiteoInterview.Linq.UnitTests/CiteoInterview.Linq.UnitTests.csproj" />
+  </Folder>
+</Solution>
